@@ -36,7 +36,7 @@ public class View extends JFrame {
         selectTeamsButton.setFocusable(false);
 
         // Play Button
-        JButton playButton = new JButton("Play");
+        JButton playButton = new JButton("Play ");
         playButton.setBounds(550,60,150,50);
         playButton.setFocusable(false);
 
@@ -56,7 +56,7 @@ public class View extends JFrame {
         centerPanel.setLayout(null);
 
         //Home Team Label & Players List
-        JLabel firstTeamPlayersLabel = new JLabel("Home : Roster");
+        JLabel firstTeamPlayersLabel = new JLabel("Team A : Roster");
         firstTeamPlayersLabel.setBounds(50,0,250,50);
         JTextArea firstTeamPlayers = new JTextArea(30, 15);
         JScrollPane firstTeamPlayersTextArea = new JScrollPane(firstTeamPlayers);
@@ -64,7 +64,7 @@ public class View extends JFrame {
         firstTeamPlayers.setBorder(BorderFactory.createEtchedBorder());
 
         //Away Team Label & Players List
-        JLabel secondtTeamPlayersLabel = new JLabel("Away : Roster");
+        JLabel secondtTeamPlayersLabel = new JLabel("Team B : Roster");
         secondtTeamPlayersLabel.setBounds(450,0,250,50);
         JTextArea secondTeamPlayers = new JTextArea(30, 15);
         JScrollPane secondTeamPlayersTextArea = new JScrollPane(secondTeamPlayers);
@@ -72,7 +72,7 @@ public class View extends JFrame {
         secondTeamPlayers.setBorder(BorderFactory.createEtchedBorder());
 
         //Text Area Of Game Commentary
-        JLabel gameCommentsLabel = new JLabel("Play To Play");
+        JLabel gameCommentsLabel = new JLabel("Play By Play");
         gameCommentsLabel.setBounds(950,-25,350,100);
         JTextArea gameComments = new JTextArea(30, 15);
         JScrollPane gameCommentsTextArea = new JScrollPane(gameComments);
