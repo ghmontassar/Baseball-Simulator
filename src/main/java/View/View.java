@@ -152,7 +152,7 @@ public class View extends JFrame {
                     gameComments.append("* * * * * * * * * * * * * * * * *");
                     gameComments.append("*  INIZIO PARTE ALTA " + i + "° INNING  *");
                     gameComments.append("* * * * * * * * * * * * * * * * *\n");
-                    //game = new Game();
+                    game = new Game();
                     gameComments.append(game.playHalfInning(firstTeamBench, secondTeamBench));
                     int pointforFirstTeam = game.getRuns();
                     pointsforFirstTeam.add(pointforFirstTeam);
@@ -169,6 +169,7 @@ public class View extends JFrame {
                     gameComments.append("* * * * * * * * * * * * * * * * *");
                     gameComments.append("* INIZIO PARTE BASSA " + i + "° INNING  *");
                     gameComments.append("* * * * * * * * * * * * * * * * *\n");
+                    game = new Game();
                     gameComments.append(game.playHalfInning(secondTeamBench, firstTeamBench));
                     int pointforSecondTeam = game.getRuns();
                     pointsForSecondTeam.add(pointforSecondTeam);
